@@ -113,7 +113,7 @@ body {
     padding: 30px;
     outline: 1px solid #6C727F;
     border-radius: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .dashboard__details {
     width: 320px;
@@ -284,6 +284,9 @@ body {
 }
 
 @media (max-width: 640px) {
+    .dashboard__main {
+        margin-bottom: 50px;
+    }
     .dashboard__cards {
         flex-wrap: wrap;
         flex-direction: column-reverse;
@@ -304,7 +307,8 @@ body {
         display: none;
     }
     .sidebar__group,
-    .sidebar__nav {
+    .sidebar__nav,
+    .sidebar__footer {
         gap: 0;
     }
 }
