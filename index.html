@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bank Dashboard - HBank">
+    <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96"/>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Bank Dashboard - HBank | devChallenges.io</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="layout">
+        <header class="topbar">
+          <div class="topbar__logo">
+            <img src="resources/hbank-logo.svg" alt="">
+          </div>
+          <div class="topbar__user">
+            <img src="resources/avatar.png" alt="User Avatar" class="topbar__avatar" />
+            <span class="topbar__name">Ethan Sutcliffe</span>
+          </div>
+        </header>
+        <div class="layout__body">
+          <aside class="sidebar">
+            <nav class="sidebar__nav">
+              <ul class="nav-group">
+                <li class="nav-item nav-item--active">
+                  <img src="resources/House.svg" alt="Dashboard" class="nav-item__icon" />
+                  <span class="nav-item__label">Dashboard</span>
+                </li>
+              </ul>
+              <div class="nav-section">
+                <h3 class="nav-section__title">Analytics</h3>
+                <ul class="nav-group">
+                  <li class="nav-item">
+                    <img src="resources/show chart-1.svg" alt="Performance" class="nav-item__icon" />
+                    <span class="nav-item__label">Performance</span>
+                  </li>
+                  <li class="nav-item">
+                    <img src="resources/Archery.svg" alt="Hotjar" class="nav-item__icon" />
+                    <span class="nav-item__label">Hotjar</span>
+                    <span class="nav-item__badge">New</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-section">
+                <h3 class="nav-section__title">Support</h3>
+                <ul class="nav-group">
+                  <li class="nav-item">
+                    <img src="resources/ticket.svg" alt="Tickets" class="nav-item__icon" />
+                    <span class="nav-item__label">Tickets</span>
+                  </li>
+                  <li class="nav-item">
+                    <img src="resources/chat info.svg" alt="Agents" class="nav-item__icon" />
+                    <span class="nav-item__label">Agents</span>
+                  </li>
+                  <li class="nav-item">
+                    <img src="resources/users.svg" alt="Customers" class="nav-item__icon" />
+                    <span class="nav-item__label">Customers</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-section">
+                <h3 class="nav-section__title">Shop</h3>
+                <ul class="nav-group">
+                  <li class="nav-item">
+                    <img src="resources/shop.svg" alt="Products" class="nav-item__icon" />
+                    <span class="nav-item__label">Products</span>
+                  </li>
+                  <li class="nav-item">
+                    <img src="resources/basket.svg" alt="Orders" class="nav-item__icon" />
+                    <span class="nav-item__label">Orders</span>
+                  </li>
+                  <li class="nav-item">
+                    <img src="resources/chat info.svg" alt="Reports" class="nav-item__icon" />
+                    <span class="nav-item__label">Reports</span>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <footer class="sidebar__footer">
+              <div class="nav-item">
+                <img src="resources/Setting.svg" alt="Settings" class="nav-item__icon" />
+                <span class="nav-item__label">Settings</span>
+              </div>
+              <div class="nav-item">
+                <img src="resources/Logout.svg" alt="Logout" class="nav-item__icon" />
+                <span class="nav-item__label">Logout</span>
+              </div>
+            </footer>
+          </aside>
+          <main class="content">
+            <section class="dashboard">
+              <div class="dashboard_cards">
+                <div class="me">
+                  <h2 class="dashboard__title">Inventory Details</h2>
+                  <div class="dashboard__balance">
+                    <div class="balance">
+                      <p class="balance__title">Your balance:</p>
+                      <p class="balance__amount">$25,330</p>
+                      <p class="balance__cards">3 cards</p>
+                    </div>
+                    <button class="balance__button">
+                      Details
+                      <img src="icons/arrow-right.svg" alt="Details" class="balance__icon" />
+                    </button>
+                  </div>
+                  <h3 class="dashboard__subtitle">Inventory Details</h3>
+                  <div class="card-list">
+                    <div class="card card--purple">
+                      <div class="card__top">
+                        <p class="card__type">Shopping Card</p>
+                        <img src="resources/card.svg" alt="Card Icon" class="card__icon" />
+                      </div>
+                      <div class="card__details">
+                        <span class="card__name">Ethan Sutcliffe</span>
+                        <span class="card__exp">Exp 26/6</span>
+                      </div>
+                      <div class="card__bottom">
+                        <p class="card__number">**** **** 0928</p>
+                        <img src="resources/visa-logo.svg" alt="Visa" class="card__logo" />
+                      </div>
+                    </div>
+                    <div class="card card--peach">
+                      <div class="card__top">
+                        <p class="card__type">Business Card</p>
+                        <img src="resources/card.svg" alt="Card Icon" class="card__icon" />
+                      </div>
+                      <div class="card__details">
+                        <span class="card__name">Ethan Sutcliffe</span>
+                        <span class="card__exp">Exp 22/9</span>
+                      </div>
+                      <div class="card__bottom">
+                        <p class="card__number">**** **** 4486</p>
+                        <img src="resources/visa-logo.svg" alt="Visa" class="card__logo" />
+                      </div>
+                    </div>
+                    <div class="card card--add">
+                      <button class="card-btn">+ Add Card</button>
+                    </div>
+                  </div>
+                  <div class="stats-summary">
+                    <div class="stat">
+                      <div class="stat__icon stat__icon--green">
+                        <img src="resources/show chart.svg" alt="Earnings" />
+                      </div>
+                      <div class="stat__info">
+                        <p class="stat__label">Earnings</p>
+                        <p class="stat__value">$12,341</p>
+                      </div>
+                    </div>
+                    <div class="stat">
+                      <div class="stat__icon stat__icon--purple">
+                        <img src="resources/dollar coin.svg" alt="Spendings" />
+                      </div>
+                      <div class="stat__info">
+                        <p class="stat__label">Spendings</p>
+                        <p class="stat__value">$4,009</p>
+                      </div>
+                    </div>
+                    <div class="stat">
+                      <div class="stat__icon stat__icon--orange">
+                        <img src="resources/aim.svg" alt="Goals" />
+                      </div>
+                      <div class="stat__info">
+                        <p class="stat__label">Goals</p>
+                        <p class="stat__value">$8,098</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-details-panel">
+                  <h3 class="card-details__title">Card details</h3>
+                  <div class="card-preview-wrapper">
+                    <div class="card card--green card--preview">
+                      <div class="card__top">
+                        <p class="card__type">Shopping Card</p>
+                        <img src="resources/card.svg" alt="Card Icon" class="card__icon" />
+                      </div>
+                      <div class="card__details">
+                        <span class="card__name">Ethan Sutcliffe</span>
+                        <span class="card__exp">Exp 26/6</span>
+                      </div>
+                      <div class="card__bottom">
+                        <p class="card__number">**** **** 0928</p>
+                        <img src="resources/visa-logo.svg" alt="Visa" class="card__logo" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-info-block">
+                    <p class="card-info-block__label">CARD NUMBER</p>
+                    <p class="card-info-block__value">**** <strong>1234 4567 7800</strong></p>
+                    <div class="card-info-row">
+                      <div class="card-info-item">
+                        <p class="card-info-item__label">EXPIRE DATE</p>
+                        <p class="card-info-item__value">08/28</p>
+                      </div>
+                      <div class="card-info-item">
+                        <p class="card-info-item__label">CVV</p>
+                        <p class="card-info-item__value">08/28</p>
+                      </div>
+                      <div class="card-info-item">
+                        <p class="card-info-item__label">LEVEL</p>
+                        <p class="card-info-item__value">02</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-limits">
+                    <h4 class="card-limits__title">Spending limits</h4>
+                    <p class="card-limits__subtitle">DAILY TRANSACTION LIMIT</p>
+                    <div class="card-limits__progress">
+                      <div class="card-limits__bar" style="width: 20%;"></div>
+                    </div>
+                    <p class="card-limits__text">
+                      <strong>$400</strong> spent of <strong>$2000</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
