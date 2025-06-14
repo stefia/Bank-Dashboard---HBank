@@ -20,7 +20,7 @@ body {
     display: flex;
     flex-direction: column; /* или row, если надо */
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 1440px;
 }
 .topbar {
     padding: 20px 24px;
