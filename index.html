@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Bank Dashboard - HBank">
     <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96"/>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Bank Dashboard - HBank | devChallenges.io</title>
   </head>
@@ -18,63 +20,63 @@
           </div>
           <div class="topbar__user">
             <img src="resources/avatar.png" alt="User Avatar" class="topbar__avatar" />
-            <span class="topbar__name">Ethan Sutcliffe</span>
+            <span class="topbar__name text--body">Ethan Sutcliffe</span>
           </div>
         </header>
         <div class="layout__body">
           <aside class="sidebar">
             <nav class="sidebar__nav">
               <ul class="nav-group">
-                <li class="nav-item nav-item--active">
+                <li class="nav-item">
                   <img src="resources/House.svg" alt="Dashboard" class="nav-item__icon" />
-                  <span class="nav-item__label">Dashboard</span>
+                  <span class="nav-item__label text--label">Dashboard</span>
                 </li>
               </ul>
               <div class="nav-section">
-                <h3 class="nav-section__title">Analytics</h3>
+                <h3 class="nav-section__title text--label-sm">Analytics</h3>
                 <ul class="nav-group">
                   <li class="nav-item">
                     <img src="resources/show chart-1.svg" alt="Performance" class="nav-item__icon" />
-                    <span class="nav-item__label">Performance</span>
+                    <span class="nav-item__label text--label">Performance</span>
                   </li>
                   <li class="nav-item">
                     <img src="resources/Archery.svg" alt="Hotjar" class="nav-item__icon" />
-                    <span class="nav-item__label">Hotjar</span>
-                    <span class="nav-item__badge">New</span>
+                    <span class="nav-item__label text--label">Hotjar</span>
+                    <span class="nav-item__badge text--label">New</span>
                   </li>
                 </ul>
               </div>
               <div class="nav-section">
-                <h3 class="nav-section__title">Support</h3>
+                <h3 class="nav-section__title text--label-sm">Support</h3>
                 <ul class="nav-group">
                   <li class="nav-item">
                     <img src="resources/ticket.svg" alt="Tickets" class="nav-item__icon" />
-                    <span class="nav-item__label">Tickets</span>
+                    <span class="nav-item__label text--label">Tickets</span>
                   </li>
                   <li class="nav-item">
                     <img src="resources/chat info.svg" alt="Agents" class="nav-item__icon" />
-                    <span class="nav-item__label">Agents</span>
+                    <span class="nav-item__label text--label">Agents</span>
                   </li>
                   <li class="nav-item">
                     <img src="resources/users.svg" alt="Customers" class="nav-item__icon" />
-                    <span class="nav-item__label">Customers</span>
+                    <span class="nav-item__label text--label">Customers</span>
                   </li>
                 </ul>
               </div>
               <div class="nav-section">
-                <h3 class="nav-section__title">Shop</h3>
+                <h3 class="nav-section__title text--label-sm">Shop</h3>
                 <ul class="nav-group">
                   <li class="nav-item">
                     <img src="resources/shop.svg" alt="Products" class="nav-item__icon" />
-                    <span class="nav-item__label">Products</span>
+                    <span class="nav-item__label text--label">Products</span>
                   </li>
                   <li class="nav-item">
                     <img src="resources/basket.svg" alt="Orders" class="nav-item__icon" />
-                    <span class="nav-item__label">Orders</span>
+                    <span class="nav-item__label text--label">Orders</span>
                   </li>
                   <li class="nav-item">
                     <img src="resources/chat info.svg" alt="Reports" class="nav-item__icon" />
-                    <span class="nav-item__label">Reports</span>
+                    <span class="nav-item__label text--label">Reports</span>
                   </li>
                 </ul>
               </div>
@@ -82,11 +84,11 @@
             <footer class="sidebar__footer">
               <div class="nav-item">
                 <img src="resources/Setting.svg" alt="Settings" class="nav-item__icon" />
-                <span class="nav-item__label">Settings</span>
+                <span class="nav-item__label text--label">Settings</span>
               </div>
               <div class="nav-item">
                 <img src="resources/Logout.svg" alt="Logout" class="nav-item__icon" />
-                <span class="nav-item__label">Logout</span>
+                <span class="nav-item__label text--label">Logout</span>
               </div>
             </footer>
           </aside>
@@ -94,50 +96,47 @@
             <section class="dashboard">
               <div class="dashboard_cards">
                 <div class="me">
-                  <h2 class="dashboard__title">Inventory Details</h2>
+                  <h2 class="dashboard__title text--label-bd">Inventory Details</h2>
                   <div class="dashboard__balance">
                     <div class="balance">
-                      <p class="balance__title">Your balance:</p>
-                      <p class="balance__amount">$25,330</p>
-                      <p class="balance__cards">3 cards</p>
+                      <p class="balance__title text--label">Your balance:</p>
+                      <p class="balance__amount text--price">$25,330</p>
+                      <p class="balance__cards text--label">3 cards</p>
                     </div>
-                    <button class="balance__button">
-                      Details
-                      <img src="icons/arrow-right.svg" alt="Details" class="balance__icon" />
-                    </button>
+                    <button class="balance__button text--label-bd">Details ➜</button>
                   </div>
-                  <h3 class="dashboard__subtitle">Inventory Details</h3>
+                  <h3 class="dashboard__subtitle text--label">Inventory Details</h3>
                   <div class="card-list">
                     <div class="card card--purple">
                       <div class="card__top">
-                        <p class="card__type">Shopping Card</p>
+                        <p class="card__type text--label">Shopping Card</p>
                         <img src="resources/card.svg" alt="Card Icon" class="card__icon" />
                       </div>
                       <div class="card__details">
-                        <span class="card__name">Ethan Sutcliffe</span>
-                        <span class="card__exp">Exp 26/6</span>
+                        <span class="card__name text--label">name</span>
+                        <span class="card__exp text--label">Exp 26/6</span>
                       </div>
                       <div class="card__bottom">
-                        <p class="card__number">**** **** 0928</p>
+                        <p class="card__number text--number">**** **** 0928</p>
                         <img src="resources/visa-logo.svg" alt="Visa" class="card__logo" />
                       </div>
                     </div>
                     <div class="card card--peach">
                       <div class="card__top">
-                        <p class="card__type">Business Card</p>
+                        <p class="card__type text--label">Shopping Card</p>
                         <img src="resources/card.svg" alt="Card Icon" class="card__icon" />
                       </div>
                       <div class="card__details">
-                        <span class="card__name">Ethan Sutcliffe</span>
-                        <span class="card__exp">Exp 22/9</span>
+                        <span class="card__name text--label">name</span>
+                        <span class="card__exp text--label">Exp 26/6</span>
                       </div>
                       <div class="card__bottom">
-                        <p class="card__number">**** **** 4486</p>
+                        <p class="card__number text--number">**** **** 4486</p>
                         <img src="resources/visa-logo.svg" alt="Visa" class="card__logo" />
                       </div>
                     </div>
                     <div class="card card--add">
-                      <button class="card-btn">+ Add Card</button>
+                      <button class="card-btn text--label">+ Add Card</button>
                     </div>
                   </div>
                   <div class="stats-summary">
@@ -146,8 +145,8 @@
                         <img src="resources/show chart.svg" alt="Earnings" />
                       </div>
                       <div class="stat__info">
-                        <p class="stat__label">Earnings</p>
-                        <p class="stat__value">$12,341</p>
+                        <p class="stat__label text--label">Earnings</p>
+                        <p class="stat__value text--price">$12,341</p>
                       </div>
                     </div>
                     <div class="stat">
@@ -155,8 +154,8 @@
                         <img src="resources/dollar coin.svg" alt="Spendings" />
                       </div>
                       <div class="stat__info">
-                        <p class="stat__label">Spendings</p>
-                        <p class="stat__value">$4,009</p>
+                        <p class="stat__label text--label">Spendings</p>
+                        <p class="stat__value text--price">$4,009</p>
                       </div>
                     </div>
                     <div class="stat">
@@ -164,14 +163,14 @@
                         <img src="resources/aim.svg" alt="Goals" />
                       </div>
                       <div class="stat__info">
-                        <p class="stat__label">Goals</p>
-                        <p class="stat__value">$8,098</p>
+                        <p class="stat__label text--label">Goals</p>
+                        <p class="stat__value text--price">$8,098</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="card-details-panel">
-                  <h3 class="card-details__title">Card details</h3>
+                  <h3 class="card-details__title text--label">Card details</h3>
                   <div class="card-preview-wrapper">
                     <div class="card card--green card--preview">
                       <div class="card__top">
@@ -189,32 +188,30 @@
                     </div>
                   </div>
                   <div class="card-info-block">
-                    <p class="card-info-block__label">CARD NUMBER</p>
-                    <p class="card-info-block__value">**** <strong>1234 4567 7800</strong></p>
+                    <p class="card-info-block__label text--label-sm">CARD NUMBER</p>
+                    <p class="card-info-block__value text--number">**** 1234 4567 7800</p>
                     <div class="card-info-row">
                       <div class="card-info-item">
-                        <p class="card-info-item__label">EXPIRE DATE</p>
-                        <p class="card-info-item__value">08/28</p>
+                        <p class="card-info-item__label text--label-sm">EXPIRE DATE</p>
+                        <p class="card-info-item__value text--body">08/28</p>
                       </div>
                       <div class="card-info-item">
-                        <p class="card-info-item__label">CVV</p>
-                        <p class="card-info-item__value">08/28</p>
+                        <p class="card-info-item__label text--label-sm">CVV</p>
+                        <p class="card-info-item__value text--body">08/28</p>
                       </div>
                       <div class="card-info-item">
-                        <p class="card-info-item__label">LEVEL</p>
-                        <p class="card-info-item__value">02</p>
+                        <p class="card-info-item__label text--label-sm">LEVEL</p>
+                        <p class="card-info-item__value text--body">02</p>
                       </div>
                     </div>
                   </div>
                   <div class="card-limits">
-                    <h4 class="card-limits__title">Spending limits</h4>
-                    <p class="card-limits__subtitle">DAILY TRANSACTION LIMIT</p>
+                    <h4 class="card-limits__title text--label-bd">Spending limits</h4>
+                    <p class="card-limits__subtitle text--label-sm">DAILY TRANSACTION LIMIT</p>
                     <div class="card-limits__progress">
-                      <div class="card-limits__bar" style="width: 20%;"></div>
+                      <div class="card-limits__bar" style="width: 30%;"></div>
                     </div>
-                    <p class="card-limits__text">
-                      <strong>$400</strong> spent of <strong>$2000</strong>
-                    </p>
+                    <p class="card-limits__text text--body">$400 spent of $2000</p>
                   </div>
                 </div>
               </div>

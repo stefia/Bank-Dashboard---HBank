@@ -6,10 +6,36 @@
 
 body {
     min-height: 100vh;
-    font-family: "Be Vietnam Pro", sans-serif;
+    font-family: "Outfit", sans-serif;
     color: #fff;
 }
 .container {
+}
+
+.text--label-bd {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.text--label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.text--label-sm {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #ffffff98;
+}
+.text--body {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.text--price {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.text--number {
+    font-size: 1.25rem;
+    font-weight: 800;
 }
 .page {
     background-color: #121826;
@@ -42,7 +68,6 @@ body {
 .sidebar {
     width: 240px;
     padding: 24px;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -55,11 +80,8 @@ body {
 }
 
 .nav-section__title {
-    font-size: 0.875rem;
-    font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 8px;
-    color: #888;
 }
 
 .nav-group {
@@ -74,14 +96,10 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 0.95rem;
     cursor: pointer;
     padding: 10px 0;
     border-radius: 8px;
     transition: background 0.2s;
-}
-.nav-item--active {
-    background-color: #29293f;
 }
 .nav-item__icon {
     width: 20px;
@@ -89,9 +107,8 @@ body {
 }
 .nav-item__badge {
     margin-left: auto;
-    background-color: #ff6961;
-    color: white;
-    font-size: 0.75rem;
+    background-color: #E4D6F3;
+    color: #1f1f2d;
     padding: 2px 6px;
     border-radius: 10px;
 }
@@ -120,44 +137,43 @@ body {
 .dashboard__balance {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #20202e;
+    align-items: end;
+    background-color: #E3ECE6;
     border-radius: 12px;
     padding: 24px;
+    color: #121826;
     margin: 30px 0;
+    background: 
+    url("resources/background-decor.svg") no-repeat right center,
+    linear-gradient(to right, #E3ECE6 0% 50%, #73B06F 50% 100%);
+    background-size: contain;
 }
 .dashboard__subtitle {
     
 }
 .balance__title {
-    font-size: 0.9rem;
-    color: #aaa;
     margin-bottom: 4px;
 }
 
 .balance__amount {
-    font-size: 2rem;
-    font-weight: 700;
     margin-bottom: 4px;
 }
 
 .balance__cards {
-    font-size: 0.8rem;
-    color: #888;
 }
 .balance__button {
     background: none;
-    color: #a076f1;
     border: none;
-    font-weight: 600;
     display: flex;
     align-items: center;
     gap: 6px;
     cursor: pointer;
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 5px 10px;
 }
 .card {
-    background: #2c2c3c;
-    color: white;
+    color: #121826;
     border-radius: 12px;
     padding: 20px;
     display: flex;
@@ -169,15 +185,18 @@ body {
 }
 
 .card--purple {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(to bottom, #E4D6F3 0% 60%, #A686C4 60% 100%);
+    color: #2c2c3c;
 }
 
 .card--peach {
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    background: linear-gradient(to bottom, #F5DDC8 0% 60%, #E9AE79 60% 100%);
+    color: #2c2c3c;
 }
 
 .card--green {
-    background: linear-gradient(135deg, #b7e3cd, #7bd389);
+    background: linear-gradient(to bottom, #E3ECE6 0% 60%, #73B06F 60% 100%);
+    color: #2c2c3c;
 }
 
 .card__top,
@@ -189,20 +208,16 @@ body {
 }
 
 .card__type {
-    font-size: 0.875rem;
-    font-weight: 500;
-}
 
+}
+.card__name {
+    text-transform: uppercase;
+}
 .card__number {
-    font-size: 1.2rem;
-    font-weight: 600;
-    letter-spacing: 2px;
+
 }
 
 .card__logo {
-    width: 40px;
-    margin-top: auto;
-    opacity: 0.8;
 }
 
 .card--preview {
@@ -215,8 +230,7 @@ body {
 
 
 .card-info-block__label {
-    font-size: 0.75rem;
-    color: #888;
+    text-transform: uppercase;
     margin-bottom: 10px;
 }
 
@@ -227,29 +241,23 @@ body {
 }
 
 .card-info-item__label {
-    font-size: 0.75rem;
-    color: #888;
+    text-transform: uppercase;
     margin-bottom: 10px;
 }
 
 .card-info-item__value {
-    font-size: 0.95rem;
-    font-weight: 500;
+
 }
 
 .card-limits__title {
-    font-size: 1rem;
-    font-weight: 600;
 }
 
 .card-limits__subtitle {
-    font-size: 0.75rem;
-    color: #aaa;
     margin-bottom: 8px;
 }
 
 .card-limits__progress {
-    background-color: #3a3a4f;
+    background-color: #fff;
     height: 6px;
     border-radius: 4px;
     overflow: hidden;
@@ -271,7 +279,7 @@ body {
 }
 
 .card-details-panel {
-    width: 320px;
+    width: 250px;
     flex-shrink: 0;
     border-radius: 12px;
     padding: 24px;
@@ -294,6 +302,7 @@ body {
 .dashboard_cards {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
     align-items: flex-start;
 }
@@ -301,19 +310,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px dashed #444; /* пунктирная рамка */
+    border: 2px dashed #6C727F; /* пунктирная рамка */
     border-radius: 12px;
-    height: 160px; /* подгони по дизайну */
-    color: #fff;
+    height: 180px; /* подгони по дизайну */
     cursor: pointer;
     transition: border-color 0.2s;
 }
 .card-btn {
+    color: #fff;
     background: none;
     border: none;
-    color: white;
-    font-size: 1rem;
-    font-weight: 500;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -323,11 +329,11 @@ body {
 .stats-summary {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 32px;
-    background-color: #1f1f2d;
     border-radius: 12px;
     padding: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid #6C727F;
 }
 .stat {
     display: flex;
@@ -335,36 +341,31 @@ body {
     gap: 16px;
 }
 .stat__icon {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .stat__icon img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
   /* Индивидуальные цвета фонов */
 .stat__icon--green {
-    background-color: #6fcf97;
+    background-color: #73B06F;
 }
 .stat__icon--purple {
-    background-color: #bb6bd9;
+    background-color: #A686C4;
 }
 .stat__icon--orange {
-    background-color: #f2c94c;
+    background-color: #E9AE79;
 }
 .stat__label {
-    font-size: 0.875rem;
-    color: #ccc;
 }
 .stat__value {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #fff;
 }
 .stat__info {
     display: flex;
@@ -383,3 +384,22 @@ body {
 }
 
 
+@media (max-width: 640px) {
+    .dashboard_cards {
+        flex-direction: column-reverse;
+    }
+    .card--preview {
+        transform: none;
+    }
+    .card-details-panel {
+        width: 100%;
+    }
+    .sidebar {
+        width: 64px;
+    }
+    .nav-section__title,
+    .nav-item__label,
+    .nav-item__badge {
+        display: none;
+    }
+}
