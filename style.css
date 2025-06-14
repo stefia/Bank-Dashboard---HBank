@@ -302,7 +302,6 @@ body {
 .dashboard_cards {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     gap: 24px;
     align-items: flex-start;
 }
@@ -386,6 +385,7 @@ body {
 
 @media (max-width: 640px) {
     .dashboard_cards {
+        flex-wrap: wrap;
         flex-direction: column-reverse;
     }
     .card--preview {
@@ -395,7 +395,8 @@ body {
         width: 100%;
     }
     .sidebar {
-        width: 64px;
+        width: 50px;
+        padding: 12px;
     }
     .nav-section__title,
     .nav-item__label,
